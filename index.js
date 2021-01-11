@@ -1,9 +1,9 @@
 import { Computer } from 'bitcoin-computer'
 
-class Counter {
+const Counter = `class Counter {
   constructor() { this.n = 0 }
   inc() { this.n += 1 }
-}
+}`
 
 ;(async () => {
   const computer = new Computer({
@@ -17,6 +17,7 @@ class Counter {
 
   await counter.inc()
   document.getElementById("el").innerHTML = `Counter is ${counter.n}`
-})()
 
-console.log("hello")
+  console.log(computer.db.wallet.getAddress().toString())
+  console.log(counter)
+})()
