@@ -1,8 +1,8 @@
 # bc-computer-use-in-browser
 Getting started tutorial from Bitcoin Computer https://docs.bitcoincomputer.io/getting-started/run-in-a-browser
 
-Run \n
-npm init -y \n
+Run /n
+npm init -y /n
 npm i -s bitcoin-computer
 npm i -g parcel-bundler
 npm i -s @babel/runtime
